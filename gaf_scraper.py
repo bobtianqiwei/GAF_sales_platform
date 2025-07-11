@@ -74,7 +74,7 @@ def collect_data():
     page_size = 10
     lat, lng = 40.7217861, -74.0094471
     distance = 25
-    total = 20  # For demo, fetch 20 records
+    total = 91  # For demo, fetch 20 records
     starts = list(range(0, total, page_size))
     logging.info("Starting concurrent data collection.")
     with ThreadPoolExecutor(max_workers=4) as executor:
